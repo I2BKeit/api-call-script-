@@ -1,0 +1,18 @@
+#Ibhima Keita : Devops Engineer US- Maryland 
+#!/bin/bash
+
+# Set the personal access token
+ACCESS_TOKEN="<ACCESS_TOKEN>"
+
+# Set the API endpoint
+ENDPOINT="https://api.example.com/v1/users"
+
+# Set the data for the API call
+DATA='{"name": "John Doe", "email": "johndoe@example.com", "password": "mypassword123"}'
+
+# Make the API call using cURL
+curl -X POST \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "$DATA" \
+  "$ENDPOINT"
